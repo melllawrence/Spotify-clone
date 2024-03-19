@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="/style/style.css" />
+  </head>
+  <body>
+    <!-- left -->
+    <aside>
+      <img id="logo" src="/images/no-text-logo.png" />
+      <img id="text-logo" src="/images/text-logo.png" />
+
+      <nav>
+        <a href="/">
+          <i class="bi bi-house-fill"></i>
+          <span>Menu</span>
+        </a>
+
+        <a href="/">
+          <i class="bi bi-search"></i>
+          <span>Search</span>
+        </a>
+
+        <a href="/">
+          <i class="bi bi-bookmark-fill"></i>
+          <span>Library</span>
+        </a>
+
+        <a href="/">
+          <i class="bi bi-music-note-list"></i>
+          <span>Playlists</span>
+        </a>
+
+        <a href="/">
+          <i class="bi bi-heart-fill"></i>
+          <span>Liked tracks</span>
+        </a>
+      </nav>
+    </aside>
+
+    <!-- main content -->
+    <main>
+      <!-- upper part -->
+      <header>
+        <form id="search-form">
+          <input name="searchInput" type="search" placeholder="Enter" />
+          <button>
+            <i class="bi bi-search"></i>
+          </button>
+        </form>
+
+        <ul>
+          <li>Premium</li>
+          <li>Support</li>
+          <li>Downloads</li>
+          <li>Login</li>
+        </ul>
+
+        <!-- dark mode -->
+        <label class="theme-switch">
+          <input
+            id="mode-checkbox"
+            type="checkbox"
+            class="theme-switch__checkbox"
+          />
+          <div class="theme-switch__container">
+            <div class="theme-switch__clouds"></div>
+            <div class="theme-switch__stars-container"></div>
+            <div class="theme-switch__circle-container">
+              <div class="theme-switch__sun-moon-container">
+                <div class="theme-switch__moon">
+                  <div class="theme-switch__spot"></div>
+                  <div class="theme-switch__spot"></div>
+                  <div class="theme-switch__spot"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </label>
+      </header>
+
+      <!-- songs -->
+      <div class="songs">
+        <h2 id="title">Most popular</h2>
+
+        <div id="list"></div>
+      </div>
+    </main>
+
+    <!-- play part -->
+    <div class="play-area">
+      <div>
+        <img class="animate" src= />
+
+        <div>
+          <p></p>
+          <h3></h3>
+        </div>
+      </div>
+
+      <audio controls src=""></audio>
+    </div>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
